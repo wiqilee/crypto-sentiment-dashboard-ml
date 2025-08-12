@@ -1,0 +1,46 @@
+# ============================================
+# Crypto Sentiment Dashboard Machine Learning
+# Author: wiqilee
+# License: MIT
+# ============================================
+# Copyright (c) 2025–present wiqilee
+
+# Copy this to config.toml for local use (do NOT commit files containing real API keys).
+# Create a safe example: config.example.toml without any API key.
+newsapi_key = ""  # Put your NewsAPI key in config.toml (do not commit)
+
+# Sources
+use_newsapi = true
+use_reddit  = false  # set to true only if snscrape is installed
+
+# Search
+query      = "(bitcoin OR ethereum OR crypto OR blockchain OR BTC OR ETH OR SOL)"
+language   = "en"
+days       = 7
+page_size  = 50  # NewsAPI free cap ~100 total; 50 x 2 pages ≈ 100
+
+# Reddit (snscrape)
+reddit_limit = 100
+
+# Labels for sentiment grouping
+symbols = "BTC,ETH,SOL"
+
+# CoinGecko IDs
+[coingecko_ids]
+BTC = "bitcoin"
+ETH = "ethereum"
+SOL = "solana"
+
+# Output folder
+out_dir   = "data"
+chart_dir = "charts"
+
+# Models used
+[model]
+finbert = "ProsusAI/finbert"
+roberta = "yiyanghkust/roberta-financial-news-sentiment"
+vader   = "vader_lexicon"  # built-in NLTK
+
+# Hardware
+[hardware]
+device = "auto"  # auto | cpu | cuda:0 | mps

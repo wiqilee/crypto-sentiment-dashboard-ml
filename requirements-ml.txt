@@ -1,0 +1,12 @@
+# ============================================
+# Crypto Sentiment Dashboard Machine Learning
+# Author: wiqilee
+# License: MIT
+# ============================================
+
+torch>=2.6
+transformers>=4.45
+accelerate>=1.1
+safetensors>=0.4.5
+huggingface-hub>=0.24
+tqdm>=4.67

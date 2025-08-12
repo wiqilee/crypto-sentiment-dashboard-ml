@@ -1,0 +1,95 @@
+# ============================================
+# Crypto Sentiment Dashboard Machine Learning
+# Author: wiqilee
+# License: MIT
+# ============================================
+
+# -----------------------------
+# Python / build artifacts
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+.ruff_cache/
+.tox/
+.coverage
+coverage.xml
+.hypothesis/
+
+# -----------------------------
+# Virtual environments
+# -----------------------------
+.venv/
+venv/
+env/
+
+# -----------------------------
+# Streamlit
+# -----------------------------
+# Keep config files, ignore secrets and cache/state
+.streamlit/secrets.toml
+.streamlit/state.json
+.streamlit/cache/
+.streamlit/**/__pycache__/
+
+# If you prefer to ignore everything under .streamlit except config:
+# .streamlit/*
+# !.streamlit/config.toml
+
+# -----------------------------
+# Logs
+# -----------------------------
+logs/
+*.log
+
+# -----------------------------
+# Data & outputs (raw/processed)
+# -----------------------------
+# Keep the folders but ignore their contents
+data/**
+!data/.gitkeep
+
+charts/**
+!charts/.gitkeep
+
+reports/**
+!reports/.gitkeep
+
+# Common data files anywhere (avoid committing local datasets)
+*.csv
+*.tsv
+*.xlsx
+
+# Exported figures/documents (limit to outputs; remove if you want to commit docs)
+*.pdf
+
+# -----------------------------
+# Local config (sensitive)
+# -----------------------------
+config.toml
+.env
+*.env
+# If you keep pyenv local pin private, ignore this (remove if you want to commit it)
+.python-version
+
+# -----------------------------
+# Notebooks & caches (if any)
+# -----------------------------
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# -----------------------------
+# OS / editor junk
+# -----------------------------
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

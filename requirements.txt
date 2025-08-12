@@ -1,0 +1,31 @@
+# ============================================
+# Crypto Sentiment Dashboard Machine Learning
+# Author: wiqilee
+# License: MIT
+# ============================================
+# Copyright (c) 2025–present wiqilee
+
+# Core
+streamlit==1.33.0
+pandas==2.2.2
+numpy==1.26.4
+
+# Charts
+plotly==5.22.0
+matplotlib==3.8.4
+
+# Exports
+kaleido==0.2.1
+reportlab==4.2.0     # wheels for Py3.12
+Pillow==10.3.0
+
+# Fetchers
+requests==2.32.3
+
+
+# Sentiment (only if you score locally with VADER)
+vaderSentiment==3.3.2
+
+# Optional
+tabulate==0.9.0
+toml==0.10.2
